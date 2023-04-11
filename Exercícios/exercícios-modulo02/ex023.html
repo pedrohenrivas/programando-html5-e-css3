@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: #F2F2F2;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+        header {
+            background-color: #BFB1A4;
+            padding: 10px;
+            margin: 0px;
+            font-size: 20px;
+        }
+        header > #cabeçalho {
+            text-align: center;
+        }
+        nav {
+            margin: 10px;
+            padding: 2px;
+            background-color: #73675C;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.479);
+            border-radius: 5px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: #D9AA52;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: #CCC2F2;
+        }
+        #assuntos > p:hover {
+            color: #CCC2F2;
+        }
+        main {
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+        }
+        h2, aside {
+            margin-left: 30px;
+        }
+        footer {
+            background-color: #73675C;
+            padding: 25px;
+            margin: 0px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        span {
+            color: #CCC2F2;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="cabeçalho">Cabeçalho do site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo possimus consectetur perspiciatis, repellendus quos, rerum dignissimos eum eos, sint laudantium atque voluptatem. Illum sequi ullam sit, <span>deleniti blanditiis quas possimus?</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus quae nulla corporis! In magni enim sequi quia nesciunt consectetur beatae ratione ex iure reiciendis. Atque distinctio esse eos magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti dignissimos laboriosam dolores expedita? Distinctio nulla temporibus, culpa unde ea repudiandae saepe non accusamus, beatae aperiam illum numquam veniam! Optio, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur inventore dolores neque reprehenderit quam maiores doloremque, voluptate saepe, similique rerum ratione in aperiam quia sunt. Suscipit ducimus et recusandae neque.</p>
+                <aside>
+                    <p>Artigo escrito por José</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo pedro henri</p>
+    </footer>
+</body>
+</html>

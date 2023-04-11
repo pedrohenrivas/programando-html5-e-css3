@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes externas/internas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
+
+        @font-face {
+            font-family: 'Bestia';
+            src: url(font/Bestigia-Regular.ttf) format(truetype);
+            /*
+            Tipos de format ()
+            - opentype (oft)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: black;
+            text-align: justify;
+            margin: 20px;
+        }
+        h2 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 25px;
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+        h3 {
+            font-family: 'Bestia', sans-serif;
+            font-size: 25px;
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ullam earum! Porro nisi quas, laboriosam provident neque sit magni doloribus blanditiis labore laudantium tempora itaque odit soluta alias consectetur debitis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime culpa nemo sed consectetur sapiente dolorum quas aliquid assumenda reiciendis, voluptas eaque itaque minima saepe officia eius eos. Minima, soluta temporibus.</p>
+    <h2>SubTitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quia tempora, vitae natus ratione nam libero totam architecto rerum dolores explicabo nisi veniam adipisci soluta blanditiis esse voluptate debitis commodi.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur rerum, nam, maiores consequatur, exercitationem vel quam sapiente nemo eaque odio laborum ducimus. Consequuntur perspiciatis deserunt natus laudantium cupiditate voluptates quod?</p>
+    <h3>Fonte interna</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit ut voluptate autem accusantium? Molestias unde totam, sint voluptate tempore non. Expedita iure odio ex ad sed tenetur soluta facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae libero, voluptate laboriosam quis corrupti quod deserunt eos tempore quaerat in nihil, voluptatem dolor necessitatibus impedit, ab itaque dolorum nesciunt beatae?</p>
+</body>
+</html>

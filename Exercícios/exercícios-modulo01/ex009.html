@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1"> <!--Pode ser 1 (numerico), A (alfabetico), a (alfabetico minúsculo), I (números romanos maiores), i (números romanos menores)-->
+        <li>Acordar</li>
+        <li>Ligar para João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes <!--O /li se tornou opcional no HTML então caso queira retira-lo, pode fazer sem medo de corromper o codigo-->
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Cagar</li>
+        <li>Dormir</li>
+    </ol> <!--Lista ordenadas, ou seja, ordenadas automaticamente! -->
+    <h2>Listas não Ordenadas</h2>
+    <ul> <!--Lista não ordenada ou seja somente pontinhos-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol> <!--O certo seria a sub lista começar novamente a numeração porém por intuito de curiosidade vamos deixar as duas listas continuando a numeração-->
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul type="square">
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul type="square">
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Black</li>
+            <li>SplinterCell</li>
+        </ul type="square">
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design/estilo de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interativfidade de um site.</dd>
+    </dl> <!--Geralmente usa-se o CSS para está personalização, entretanto, o google valoriza sites que tem essa explicação no mecanismo de busca. -->
+</body>
+</html>

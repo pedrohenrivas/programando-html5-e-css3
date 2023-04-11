@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F2F2F2;
+    margin: 0px;
+}
+
+.logomarca {
+    height: 300px;
+    width: 300px;
+    padding: 30px 30px;
+    display: block;
+    margin: auto;
+}
+
+nav > a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin: 30px;
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+}
+
+nav > a:hover {
+    color: #0477BF;
+}
+
+.principal {
+    position: relative;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+@media screen and (min-width: 750px) {
+    h1.textcenter2 {
+      font-size: 45px;
+    }
+  }
+  
+  @media screen and (max-width: 200px) {
+    h1.textcenter2 {
+      font-size: 10px;
+    }
+  }
+
+.textcenter2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: #F2F2F2;
+}
+
+.imgprincipal2 {
+    display: block;
+    border-radius: 0px 80px;
+    margin: auto;
+}
+
+#secundario {
+    background-color: #FF8205;
+    text-align: justify;
+    padding: 50px;
+    display: block;
+    color: #F2F2F2;
+    margin-top: 60px;
+}
+
+.trabalhos {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+
+.trabalho1, .trabalho2 {
+    border-radius: 0px 30px;
+}
+
+.duvida {
+    text-align: justify;
+    display: block;
+    background-color: #0477BF;
+    padding: 50px;
+    margin: auto;
+    color: #F2F2F2;
+}
+
+.duvida2 {
+    text-align: justify;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, padrão dos vídeos */
+    height: 0;
+    overflow: hidden;
+    margin-bottom:20px;
+    }
+    
+.video iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    }
+
+.depoimento {
+    text-align: justify;
+    display: block;
+    padding: 80px;
+    margin: auto;
+}
+
+li.li1 {
+    margin: auto;
+    text-align: justify;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+}
+li.li2 {
+    margin: auto;
+    text-align: justify;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+}
+li.li3 {
+    margin: auto;
+    text-align: justify;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+}
+
+br {
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #FF8205;
+    margin: auto;
+    color: #F2F2F2;
+    padding: 50px;
+    text-align: center;
+}

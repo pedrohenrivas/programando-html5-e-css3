@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture> <!--Sempre colocar 50px acima da imagem para que a barra lateral não apareça-->
+        <source media="(max-width: 750px)" srcset="imagem-fundo/fundop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem-fundo/fundom.png" type="image/png">
+        <img src="imagem-fundo/fundog.png" alt="Imagem flexível"> <!--IMPORTANTE A SEQUENCIA IMPORTA ENTÃO RESPEITE A SEQUENCIA DE TAMANHO DAS IMAGENS, POIS SE NÃO PODE NÃO FUNCIONAR DIREITO-->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="imagem-fundo/midia/Kayne-West-Clouds.mp3" controls autoplay></audio>
+    <!--Essa tag ela é mais limitada aos navegadores-->
+    <!--Podemos usar os formatos MP3 WAV OGG - alguns não são compátiveis com todos os navegadores-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="imagem-fundo/midia/Kayne-West-Clouds.mp3" type="audio/mpeg">
+        <source src="imagem-fundo/midia/Kayne-West-Clouds.mp3" type="audio/ogg">
+        <source src="imagem-fundo/midia/Kayne-West-Clouds.mp3" type="audio/wav"> <!--IMPORTANTE NÃO USAR POR SER MUITO PESADO-->
+        <!--Nesse caso a sequencia também importa ou seja ele vai buscar cada um desses arquivos para ver qual é compátivel com navegador do usuário-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="imagem-fundo/midia/Kayne-West-Clouds.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

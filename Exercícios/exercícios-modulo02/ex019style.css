@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+EM HTML é id = em CSS é #
+EM HTML é class = em CSS é .
+*/
+
+body {
+    background-color: #707F8C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 20px;
+}
+
+h1 {
+    color: azure;
+    border-radius: 20px;
+}
+
+h1#principal {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #434F59;
+    text-shadow: 1px 1px 1px 2px;
+}
+
+.secundario {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #434F59;
+}
+
+h2 {
+    color: azure;
+}
+
+p {
+    color: #D7D7D9;
+}
+
+.basico {
+    color: #435944;
+}
+.intermediario {
+    color: #595943;
+}
+.avancado {
+    color: #594343;
+}

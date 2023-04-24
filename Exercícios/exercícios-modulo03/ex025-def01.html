@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Montando Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th.titulos {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Montando Tabela Completa</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="titulos" scope="col">Grupo</th>
+                <th class="titulos" scope="col">Nomes</th>
+                <th colspan="3" class="titulos" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" class="titulos" scope="rowgroup">Homens</th>
+                <td>Mario Alencar</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>                
+                <td>Alex Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>                
+                <td>José Henrique</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <th rowspan="3" class="titulos" scope="rowgroup">Mulheres</th>
+                <td>Ana Clara</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>                
+                <td>Beatriz Oliveira</td>
+                <td>Wall-E</td>
+                <td>OldBoy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>                
+                <td>Sophia Alvés</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -49,68 +49,73 @@
         col.csexo, col.cidade {
             background-color: lightyellow;
         }
+
+        div#container {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Agrupando Colunas com Colgroup</h1>
 
-    <table>
-        <caption>Cadastro</caption>
-
-        <colgroup>
-        <col class="cnome">
-        <col class="csexo">
-        <col class="cidade">
-        <col class="cprof">
-        </colgroup>
-        <tr class="thead">
-            <th>Nome</th>
-            <th class="amarelo">Sexo</th>
-            <th class="amarelo">Idade</th>
-            <th>Profissão</th>
-        </tr>
-        <tr>
-            <td>Ana</td>
-            <td style="text-align: center;">F</td>
-            <td style="text-align: center;">25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <td>Rodrigo</td>
-            <td style="text-align: center;">M</td>
-            <td style="text-align: center;">32</td>
-            <td>Programador</td>
-        </tr>
-        <tr>
-            <td>Pedro</td>
-            <td style="text-align: center;">M</td>
-            <td style="text-align: center;">23</td>
-            <td>Programador</td>
-        </tr>
-        <tr>
-            <td>Fernanda</td>
-            <td style="text-align: center;">F</td>
-            <td style="text-align: center;">34</td>
-            <td>Vendedora</td>
-        </tr>
-        <tr>
-            <td>Yure</td>
-            <td style="text-align: center;">M</td>
-            <td style="text-align: center;">28</td>
-            <td>Nutricionista</td>
-        </tr>
-        <tr>
-            <td>Fernando</td>
-            <td style="text-align: center;">M</td>
-            <td style="text-align: center;">21</td>
-            <td>Vendedor</td>
-        </tr>
-        <tr>
-            <td>Romario</td>
-            <td style="text-align: center;">M</td>
-            <td style="text-align: center;">43</td>
-            <td>Médico</td>
-        </tr>
-    </table>
+    <div id="container">
+        <table>
+            <caption>Cadastro</caption>
+            <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            </colgroup>
+            <tr class="thead">
+                <th>Nome</th>
+                <th class="amarelo">Sexo</th>
+                <th class="amarelo">Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td style="text-align: center;">F</td>
+                <td style="text-align: center;">25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td style="text-align: center;">M</td>
+                <td style="text-align: center;">32</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td style="text-align: center;">M</td>
+                <td style="text-align: center;">23</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td style="text-align: center;">F</td>
+                <td style="text-align: center;">34</td>
+                <td>Vendedora</td>
+            </tr>
+            <tr>
+                <td>Yure</td>
+                <td style="text-align: center;">M</td>
+                <td style="text-align: center;">28</td>
+                <td>Nutricionista</td>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td style="text-align: center;">M</td>
+                <td style="text-align: center;">21</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Romario</td>
+                <td style="text-align: center;">M</td>
+                <td style="text-align: center;">43</td>
+                <td>Médico</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

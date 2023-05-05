@@ -148,4 +148,5 @@ footer > p > a {
 
 footer > p > a:hover {
     color: #F27127;
+    transition-duration: 0.5s;
 }

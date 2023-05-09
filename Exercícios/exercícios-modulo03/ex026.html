@@ -7,7 +7,25 @@
     <title>Estudando iframe</title>
     <style>
         body {
+            display: block;
             text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: auto;
+        }
+
+        p {
+            padding: 1.5rem;
+        }
+
+        .iframeerro {
+            width: 300px;
+            height: 150px;
+        }
+
+        
+        .tabela {
+            width: 800px;
+            height: 300x;
         }
 
         iframe {
@@ -29,10 +47,17 @@
 
         <p>O site do 
 
-            <iframe src="https://google.com" frameborder="0"></iframe>
+            <iframe src="https://google.com" frameborder="0"
+            class="iframeerro"></iframe>
 
             pena que não funciona dentro do iframe.
         </p>
-    
+
+        <h2>Teste 2 com conteúdo local</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt culpa quisquam explicabo dolores praesentium amet libero! Ipsa harum, ullam consequuntur inventore iure doloribus dolorum cumque officiis error iste perspiciatis soluta.</p>
+
+        <iframe src="ex026-test2.html" frameborder="0" class="tabela"></iframe>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor possimus, fugiat cum voluptatibus animi earum nostrum perspiciatis assumenda et corporis quis sit quo cumque repellat labore a quod mollitia veniam!</p>
 </body>
 </html>

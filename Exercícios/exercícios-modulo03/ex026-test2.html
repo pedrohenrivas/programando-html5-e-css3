@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isso é um teste</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        caption {
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 600px;
+        }
+
+        tr.thead {
+            background-color: gray;
+            color: white;
+        }
+
+        th.amarelo {
+            color: lightyellow;
+        }
+
+        tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        col.cnome, col.cprof {
+            background-color: lightgray;
+        }
+
+        col.csexo, col.cidade {
+            background-color: lightyellow;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Agrupando Colunas com Colgroup</h1>
+    
+        <div id="container">
+            <table>
+                <caption>Cadastro</caption>
+                <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+                </colgroup>
+                <tr class="thead">
+                    <th>Nome</th>
+                    <th class="amarelo">Sexo</th>
+                    <th class="amarelo">Idade</th>
+                    <th>Profissão</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td style="text-align: center;">F</td>
+                    <td style="text-align: center;">25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Rodrigo</td>
+                    <td style="text-align: center;">M</td>
+                    <td style="text-align: center;">32</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td style="text-align: center;">M</td>
+                    <td style="text-align: center;">23</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Fernanda</td>
+                    <td style="text-align: center;">F</td>
+                    <td style="text-align: center;">34</td>
+                    <td>Vendedora</td>
+                </tr>
+                <tr>
+                    <td>Yure</td>
+                    <td style="text-align: center;">M</td>
+                    <td style="text-align: center;">28</td>
+                    <td>Nutricionista</td>
+                </tr>
+                <tr>
+                    <td>Fernando</td>
+                    <td style="text-align: center;">M</td>
+                    <td style="text-align: center;">21</td>
+                    <td>Vendedor</td>
+                </tr>
+                <tr>
+                    <td>Romario</td>
+                    <td style="text-align: center;">M</td>
+                    <td style="text-align: center;">43</td>
+                    <td>Médico</td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>

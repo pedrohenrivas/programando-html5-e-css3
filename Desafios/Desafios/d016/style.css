@@ -19,9 +19,9 @@
     overflow-x: hidden; 
 }
 
-html{
+/*html{
     height: 500vh;
-}
+}*/
 
 header .container{
     max-width: 1280px;
@@ -102,7 +102,7 @@ header ul li a button:hover{
 }
 
 main .comment{
-    height: 80vh;
+    height: 60vh;
     width: 100vw;
     margin: auto;
     background-color: #181716;
@@ -141,7 +141,7 @@ main .comment-2{
 }
 
 main .container-2{
-    height: 80vh;
+    height: 60vh;
     width: 100vw;
     background-image: url(imagens/banner\ twitch.jpg.png);
     background-position: center;
@@ -183,6 +183,7 @@ main .section-companion{
     flex-direction: row;
     padding-top: 5rem;
     position: relative;
+    background-color: #1B1B1B;
 }
 
 main .container-3{
@@ -203,4 +204,140 @@ main .companion-container{
 main .text-container{
     display: flex;
     flex-direction: column;
+}
+
+main .text-container h2{
+    font-size: 70px;
+    line-height: 4rem;
+    word-spacing: 100vw;
+    font-weight: bold;
+    color: var(--lightgray);
+}
+
+main .text-container h2 span{
+    font-size: 35px;
+    color: #bab1a8;
+    font-weight: 300;
+}
+
+main .text-container p{
+    line-height: 23px;
+    color: var(--lightgray);
+}
+
+main section div div div a button{
+    align-self: flex-start;
+    color: white;
+    background-color: var(--red);
+    margin-top: 18px;
+    padding: 8px 18px;
+    font-size: 18px;
+    font-weight: 100;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.404);
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .companion-image{
+    width: 100%;
+}
+
+main .banner-paralax{
+    height: 60vh;
+    width: 100vw;
+    background-image: url(imagens/banner\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: var(--black);
+    display: block;
+}
+
+footer .container-4{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .footer-branding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+footer .footer-navigation{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+footer .footer-nav-link{
+    border-bottom: 2px solid transparent;
+    color: var(--lightgray);
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    text-decoration: none;
+}
+
+footer .copy{
+    max-width: 1100px;
+    width: 100%;
+}
+
+footer .copy-flex{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div p{
+    color: var(--lightgray);
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    flex: 1;
+}
+
+footer div p a{
+    color: var(--red)
+}
+footer div p a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+footer .container-5{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-socials{
+    display: flex;
+}
+footer .social-item{
+    width: 40px;
+    height: 40px;
+}
+
+footer div div a i{
+    font-size: 30px;
+    color: var(--lightgray);
+}
+footer div div a i:hover{
+    font-size: 30px;
+    color: var(--red);
+    transition: 0.5s;
 }

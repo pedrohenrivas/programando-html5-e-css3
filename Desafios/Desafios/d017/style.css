@@ -28,9 +28,9 @@
     overflow-x: hidden;
 }
 
-html{
+/*html{
     height: 500vh;
-}
+}*/
 
 .header{
     width: 100%;
@@ -203,6 +203,8 @@ main .line-item-2{
     margin-bottom: 1.5rem;
 }
 
+/* OS VIDEOS PRECISÃO DE AJUSTES*/
+
 main .videos{
     display: flex;
     flex-wrap: wrap;
@@ -249,7 +251,6 @@ main .video{
     display: flex;
     justify-content: center;
     padding-bottom: 1.5rem;
-    padding-top: 5.5rem;
     color: var(--white);
     text-transform: uppercase;
     font-weight: 400;
@@ -265,4 +266,86 @@ main .publi{
     color: var(--white);
     background-color: #00000052;
     padding: 4% 4%;
+}
+
+
+/* PAREI AQUI CARROCEL DE BAIXO AINDA PRECISA DE AJUSTES*/
+
+
+main .container-gallery{
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    background-color: var(--gray);
+}
+
+main .container-center-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 5.5rem;
+  }
+
+main .content-gallery{
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+main .gallery-wrapper{
+    overflow-y: hidden;
+}
+
+main .gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+main .arrow-left, .arrow-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 45px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+main .arrow-right{
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+main .arrow-left:hover{
+    opacity: 1;
+}
+main .arrow-right:hover{
+    opacity: 1;
+}
+
+.item{
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    border: 2px solid var(--gray);
+    transition: all 600ms ease-in-out;
+}
+
+.current-item{
+    opacity: 1;
+    border: 2px solid var(--lightgray);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
 }

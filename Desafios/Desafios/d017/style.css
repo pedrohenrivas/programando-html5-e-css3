@@ -25,6 +25,7 @@
     list-style: none;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 html{
@@ -116,4 +117,63 @@ header ul li a:hover{
     font-size: 22px;
     font-size: 300;
     text-transform: uppercase;
+}
+
+main .container-bio{
+    width: 100%;
+    margin: auto;
+    background-color: var(--gray);
+}
+
+main .biografia{
+    height: 60vh;
+    max-width: 1280px;
+    margin: auto;
+}
+
+main .text-h1-bio{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 5.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+main .text-h2-bio{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 300;
+}
+
+main .line-item{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--lightgray);
+    margin: 0 auto;
+}
+
+main .container-photo{
+    float: left;
+    margin-right: 8rem;
+}
+
+main .image{
+    padding: 0 4%;
+}
+
+main .photo{
+    border-radius: 10px;
+}
+
+main .text-p-bio{
+    color: var(--white);
+    text-align: justify;
+    padding: 0 4%;
 }

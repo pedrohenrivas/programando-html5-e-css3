@@ -224,4 +224,45 @@ main .video{
     width: 100%;
   }
 
-  
+  main .container-publi{
+    background-image: url(imagens/banner-2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 60vh;
+    padding-bottom: 5.5rem;
+    position: relative;
+  }
+
+  main .container-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  main .text-h1-publi{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 5.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+main .content-publi{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 4%;
+}
+
+main .publi{
+    color: var(--white);
+    background-color: #00000052;
+    padding: 4% 4%;
+}

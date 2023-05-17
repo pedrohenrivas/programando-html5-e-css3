@@ -438,6 +438,8 @@ footer form input{
     margin: 10px 0px;
     border-radius: 5px;
     border: 0px;
+    outline: none;
+    transition: all 0.5s;
 }
 footer form textarea{
     padding: 13px;
@@ -448,12 +450,18 @@ footer form textarea{
 
 footer button{
     padding: 13px;
+    cursor: pointer;
     font-weight: 500;
     font-size: 20px;
     border-radius: 15px;
     border: 0px;
     color: var(--white);
     background-color: var(--lightgray);
+    transition: all 1s;
+}
+
+footer button:hover{
+    background-color: var(--gray);
 }
 
 footer .container-final{

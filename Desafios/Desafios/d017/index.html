@@ -152,21 +152,52 @@
     </main>
 
     <footer>
-        <section>
-            <h2>Contato</h2>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-                <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
-                <label>Email</label>
-                <input type="text" name="email" placeholder="Digite seu email" autocomplete="off">
-                <label>Mensagem</label>
-                <textarea name="message"cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <button type="submit">Enviar</button>
+        </div>
+        <div class="container-form">
+            <h2 class="text-h2-contact">Contato</h2>
+            <div class="line-item-2">
+            </div>
+            <div class="container-center-contact">
+                <p>Belo Horizonte - MG <br>exemple@gmail.com</br></p>
+                <section class="content-contact">
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <div class="group-name-cell">
+                                <div class="name-label">
+                                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+                                </div>
+                                <div class="cell-label">
+                                    <input type="text" name="email" placeholder="Digite seu telefone" autocomplete="off">
+                                </div>
+                            </div>
+                            <input type="text" name="email" placeholder="Digite seu email" autocomplete="off">
+                            <textarea name="message"cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                            <input type="hidden" name="acessKey" value="#">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Desafios/Desafios/d017/thanks.html">
+                        </form>
+                </section>
+            </div>
+        </div>
 
-                <input type="hidden" name="acessKey" value="#">
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Desafios/Desafios/d017/thanks.html">
-            </form>
-        </section>
+        <div class="container-final">
+            <div class="flex-footer-final">
+                <nav class="navegation-footer">
+                    <ul>
+                    <li><a href="#" class="nav-item">Home</a></li>
+                    <li><a href="#" class="nav-item">Biografia</a></li>
+                    <li><a href="#" class="nav-item">Video</a></li>
+                    <li><a href="#" class="nav-item">Publicação</a></li>
+                    <li><a href="#" class="nav-item">Galeria</a></li>
+                    <li><a href="#" class="nav-item">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="text-final">
+            <p>Site criado por <a href="#">Pedro Henri</a> - para fins de aprendizado.</p>
+        </div>
+
     </footer>
     
     <script src="script.js"></script>

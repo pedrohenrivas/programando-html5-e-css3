@@ -205,7 +205,10 @@ main .line-item-2{
 
 /* OS VIDEOS PRECISÃO DE AJUSTES*/
 
+
 main .videos{
+    max-width: 1280px; /* Define a largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -272,8 +275,14 @@ main .publi{
 /* PAREI AQUI CARROCEL DE BAIXO AINDA PRECISA DE AJUSTES*/
 
 
+main .container-gallery-test{
+    max-width: 1280px;
+    margin: auto;
+    background-color: var(--gray);
+}
 main .container-gallery{
-    width: 100vw;
+    width: 100%;
+    overflow-y: hidden;
     height: 60vh;
     position: relative;
     background-color: var(--gray);
@@ -344,6 +353,12 @@ main .arrow-right:hover{
     transition: all 600ms ease-in-out;
 }
 
+main .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 .current-item{
     opacity: 1;
     border: 2px solid var(--lightgray);
@@ -368,7 +383,6 @@ footer .content-contact{
     align-items: center;
     flex-direction: column;
     padding: 10px 45px;
-    background-color: #656800;
     width: 500px;
 }
 
@@ -383,7 +397,7 @@ footer p{
     color: var(--white);
 }
 
-footer .text-h2-contact{
+footer .text-h1-contact{
     display: flex;
     justify-content: center;
     padding-bottom: 1.5rem;
@@ -403,7 +417,7 @@ footer .line-item-2{
     margin-bottom: 1.5rem;
 }
 
-footer section form{
+footer form{
     display: flex;
     flex-direction: column;
     width: 100%;

@@ -150,6 +150,24 @@
 
         </div>
     </main>
+
+    <footer>
+        <section>
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Digite seu email" autocomplete="off">
+                <label>Mensagem</label>
+                <textarea name="message"cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="acessKey" value="#">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Desafios/Desafios/d017/thanks.html">
+            </form>
+        </section>
+    </footer>
     
     <script src="script.js"></script>
 </body>

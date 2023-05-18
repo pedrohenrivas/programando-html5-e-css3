@@ -4,37 +4,38 @@ window.addEventListener('scroll', function(){
 })
 
 
+var carousel = document.querySelector('.carousel');
+var slides = carousel.querySelectorAll('.carousel-slide');
+var currentIndex = 0;
+var prevButton = document.querySelector('.carousel-prev');
+var nextButton = document.querySelector('.carousel-next');
 
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+function showSlide(index) {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  slides[index].style.display = 'block';
+}
 
-controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
+function nextSlide(event) {
+  event.preventDefault(); // Evita o comportamento padrão do link
+  currentIndex++;
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+  showSlide(currentIndex);
+}
 
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
+function prevSlide(event) {
+  event.preventDefault(); // Evita o comportamento padrão do link
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = slides.length - 1;
+  }
+  showSlide(currentIndex);
+}
 
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
+showSlide(currentIndex);
+nextButton.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', prevSlide);
 
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
-
-    items[currentItem].classList.add("current-item");
-  });
-});

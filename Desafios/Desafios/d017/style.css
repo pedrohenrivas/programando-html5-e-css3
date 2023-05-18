@@ -119,6 +119,8 @@ header ul li a:hover{
     text-transform: uppercase;
 }
 
+/* Bio */
+
 main .container-bio{
     width: 100%;
     margin: auto;
@@ -176,6 +178,8 @@ main .text-p-bio{
     text-indent: 1rem;
 }
 
+/* Video */
+
 main .container-video{
     background-color: var(--black);
     width: 100%;
@@ -203,9 +207,6 @@ main .line-item-2{
     margin-bottom: 1.5rem;
 }
 
-/* OS VIDEOS PRECISÃO DE AJUSTES*/
-
-
 main .videos{
     max-width: 1280px; /* Define a largura máxima para o conteúdo */
     margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
@@ -228,6 +229,8 @@ main .video{
 iframe {
     width: 100%;
 }
+
+/* Publi */
 
 main .container-publi{
     background-image: url(imagens/banner-2.jpg);
@@ -272,98 +275,129 @@ main .publi{
 }
 
 
-/* PAREI AQUI CARROCEL DE BAIXO AINDA PRECISA DE AJUSTES*/
+/* Gallery */
 
-
-main .container-gallery-test{
-    max-width: 1280px;
-    margin: auto;
-    background-color: var(--gray);
-}
 main .container-gallery{
-    width: 100%;
-    overflow-y: hidden;
-    height: 60vh;
-    position: relative;
     background-color: var(--gray);
 }
 
-main .container-center-video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 5.5rem;
-  }
+main .text-h1-gallery{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 5.5rem;
+}
 
 main .content-gallery{
-    position: relative;
-    padding: 15px;
-    max-width: 640px;
-    margin: 0 auto;
-}
-
-main .gallery-wrapper{
-    overflow-y: hidden;
-}
-
-main .gallery{
+    max-width: 1280px; /* Define a largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
     display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5.5rem;
 }
 
-main .arrow-left, .arrow-right{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 45px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    transition: all 600ms ease-in-out;
+main .carousel-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+  
+main .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+main .carousel-slide {
+    flex-shrink: 0;
+    width: 100%;
 }
 
-main .arrow-right{
-    left: auto;
-    right: 0;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-main .arrow-left:hover{
-    opacity: 1;
-}
-main .arrow-right:hover{
-    opacity: 1;
-}
-
-.item{
+main .carousel-slide img {
     width: 400px;
     height: 400px;
-    flex-shrink: 0;
-    opacity: 0.5;
-    border: 2px solid var(--gray);
-    transition: all 600ms ease-in-out;
-}
-
-main .item img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-  }
-
-.current-item{
-    opacity: 1;
-    border: 2px solid var(--lightgray);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;  
 }
+  
+main .carousel img {
+    width: 100%;
+    height: auto;
+}
+  
+main .bxs-left-arrow,
+main .bxs-right-arrow{
+    color: var(--white);
+    font-size: 20;
+}
+
+main .bxs-left-arrow:hover{
+    transition-duration: 0.5s;
+    color: var(--gray);
+}
+main .bxs-right-arrow:hover{
+    transition-duration: 0.5s;
+    color: var(--gray);
+}
+
+
+main .carousel-prev{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0));
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+main .carousel-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0));
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+main .carousel-next:hover{
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0));
+}
+main .carousel-prev:hover{
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0));
+}
+
+main .carousel-prev {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+main .carousel-next {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Footer */
 
 
 footer{
@@ -446,6 +480,7 @@ footer form textarea{
     margin: 10px 0px;
     border-radius: 5px;
     border: 0px;
+    outline: none;
 }
 
 footer button{

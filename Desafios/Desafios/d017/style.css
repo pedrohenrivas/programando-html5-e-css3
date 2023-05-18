@@ -491,10 +491,18 @@ footer nav ul li a{
     color: var(--white);
     font-size: 13px;
 }
+footer nav ul li a:hover{
+    color: var(--lightgray);
+    transition-duration: 0.5s;
+}
 
 footer .text-final a{
     color: var(--white);
     font-weight: 700;
+}
+footer .text-final a:hover{
+    color: var(--lightgray);
+    transition-duration: 0.5s;
 }
 footer .text-final p{
     color: var(--white);

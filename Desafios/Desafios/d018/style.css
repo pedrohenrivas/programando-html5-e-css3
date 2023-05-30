@@ -4,9 +4,9 @@
 
 @font-face {
     font-family: 'Scout-Black';
-    src: url(font/Scout-Black.otf) format('opentype');
-    src: url(font/Scout-Regular.otf) format('opentype');
-    src: url(font/Scout-Bold.otf) format('opentype');
+    src: url(font/ScoutCond-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root{
@@ -51,6 +51,10 @@ html{
     z-index: 1;
 }
 
+.logo img{
+    max-width: 150px;
+}
+
 .content-header{
     max-width: 1280px;
     margin: auto;
@@ -67,9 +71,12 @@ header ul li{
     padding: 10px 15px;
 }
 
-header ul li a {
+header ul li a{
     position: relative;
     color: var(--white);
+    font-size: 23px;
+    font-weight: 100;
+    text-transform: uppercase;
     padding: 10px;
 }
   
@@ -103,6 +110,7 @@ header button{
     color: var(--gray);
     font-weight: bold;
     cursor: pointer;
+    font-size: 23px;
 }
 
 .container-media{
@@ -128,13 +136,17 @@ header button{
 }
 
 .media h1{
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 60px;
+    font-weight: 500;
     font-style: italic;
 }
 
 .media p{
     margin: 10px 0px 10px 0px;
+    font: var(--font2);
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 
 .media button{
@@ -142,6 +154,9 @@ header button{
     text-transform: uppercase;
     border-style: none;
     padding: 10px 15px;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
     color: var(--gray);
     font-weight: bold;
     cursor: pointer;

@@ -113,6 +113,11 @@ header button{
     font-size: 23px;
 }
 
+header button:hover{
+    background-color: #08beac;
+    transition-duration: 0.5s;
+}
+
 .container-media{
     position: absolute;
     top: 30%;

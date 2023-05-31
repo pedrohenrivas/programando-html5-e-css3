@@ -52,7 +52,7 @@ html{
 }
 
 .logo img{
-    max-width: 150px;
+    max-width: 115px;
 }
 
 .content-header{
@@ -113,6 +113,10 @@ header button{
     font-size: 23px;
 }
 
+header .buy-game a{
+    color: var(--gray);
+}
+
 header button:hover{
     background-color: #08beac;
     transition-duration: 0.5s;
@@ -165,6 +169,10 @@ header button:hover{
     color: var(--gray);
     font-weight: bold;
     cursor: pointer;
+}
+
+.media .atualization a{
+    color: var(--gray);
 }
 
 .media button:hover {

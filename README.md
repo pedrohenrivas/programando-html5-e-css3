@@ -8,4 +8,4 @@ PROJETO CORDEL : https://pedrohenrivas.github.io/projeto-cordel/ USANDO HTML e C
 
 PROJETO TRACK FOOD : https://pedrohenrivas.github.io/projeto-trackfood/ USANDO HTML, CSS e JavaScript
 
- Estou aprendendo a criar sites com HTML5 e CSS3
+ Estou aprendendo a criar sites com HTML5 e CSS3 através do Professor Guanabara

@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'nexafont';
-    src: url(assets/fonts/Nexa\ Bold.otf) format('opentype'), url(assets/fonts/Nexa\ Light.otf) format('opentype');
+    font-family: 'nexafontbold';
+    src: url(assets/fonts/Nexa\ Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'nexafontlight';
+    src: url(assets/fonts/Nexa\ Light.otf) format('opentype');
 }
 
 @font-face {
@@ -13,11 +18,131 @@
 :root {
     /* Fonts */
 
-    --fontnexa: 'nexafont','Arial Narrow', Arial, sans-serif;
+    --nexafontbold: 'nexafontbold','Arial Narrow', Arial, sans-serif;
+    --fontnexalight: 'nexafontlight','Arial Narrow', Arial, sans-serif;
     --fontnexarust: 'nexarustsans','Arial Narrow', Arial, sans-serif;
 
     /* Colors */
 
     --color1: #B6904D;
     --color2: #fff;
+    --color3: #1b1b1b;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    background-color: #B6904D;
+}
+
+.header {
+    background-color: rgba(171, 143, 82, 0.692);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 90%;
+    height: 80%;
+}
+
+.container-header {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex-box-header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    font-family: var(--fontnexalight);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.container-home {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex-box-home {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.text-home {
+    margin-top: 5rem;
+    margin-right: 10rem;
+}
+
+.h1-primary, .h1-secundary {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 1.2rem 0;
+    font-family: var(--fontnexalight);
+    color: var(--color2);
+}
+
+.button-home {
+    background-color: var(--color1);
+    padding: .7rem 1rem;
+    border-style: none;
+}
+.button-home a {
+    color: var(--color3);
+    font-family: var(--nexafontbold);
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.h1-primary {
+    font-family: var(--fontnexarust);
+    color: var(--color2);
+}
+
+.h1-secundary {
+    font-family: var(--nexafontbold);
+    color: var(--color1);
+}
+
+.flex-box-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para garantir que o conteúdo fique sobre o background */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Adicione um z-index menor para o conteúdo ficar acima do fundo */
+    z-index: -2;
+}
+  

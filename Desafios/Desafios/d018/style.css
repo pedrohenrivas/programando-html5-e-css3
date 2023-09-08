@@ -68,3 +68,58 @@
     color: #ebeaecc0;
     transition-duration: 0.5s;
 }
+
+
+/* Media query aqui para configuração da nav-bar */
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 3rem;
+
+    background-image: url("assets/img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+  
+.background {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.left-content {
+    flex: 1;
+    max-width: 50%;
+}
+.h1-background {
+    font-weight: 700;
+    font-size: 6rem;
+    color: #fff;
+}
+.h2-background {
+    font-weight: 700;
+    font-size: 6rem;
+    color: var(--cor1);
+}
+.h3-background {
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.right-content {
+    flex: .7;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.perfil-background img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+

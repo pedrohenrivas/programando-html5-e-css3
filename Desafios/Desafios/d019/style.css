@@ -1,2 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'nexafont';
+    src: url(assets/fonts/Nexa\ Bold.otf) format('opentype'), url(assets/fonts/Nexa\ Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'nexarustsans';
+    src: url(assets/fonts/NexaRustSans-Trial-BlackShadow1.ttf) format(truetype);
+}
+
+:root {
+    /* Fonts */
+
+    --fontnexa: 'nexafont','Arial Narrow', Arial, sans-serif;
+    --fontnexarust: 'nexarustsans','Arial Narrow', Arial, sans-serif;
+
+    /* Colors */
+
+    --color1: #B6904D;
+    --color2: #fff;
+}

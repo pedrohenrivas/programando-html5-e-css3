@@ -8,7 +8,7 @@
 
     --cor1: #FDA854;
     --cor2: #EBEAEC;
-    --cor3: #F0F1ED;
+    --cor3: #FFF;
 
     /* Fonts */
 
@@ -18,6 +18,53 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    padding: 1rem;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem 0 3rem;
+}
+
+.logo-marca a {
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.logo-marca a:hover {
+    color: #fda854a6;
+    transition-duration: 0.5s;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.nav-bar a:hover {
+    color: #ebeaecc0;
+    transition-duration: 0.5s;
 }

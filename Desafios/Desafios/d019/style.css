@@ -73,6 +73,10 @@ a {
     color: var(--color2);
 }
 
+a:hover {
+    color: var(--color3);
+}
+
 .container-home {
     max-width: 1280px;
     margin: auto;
@@ -112,6 +116,10 @@ p {
     font-family: var(--nexafontbold);
     font-size: .9rem;
     text-transform: uppercase;
+}
+
+.button-home a:hover{
+    color: var(--color2);
 }
 
 .h1-primary {

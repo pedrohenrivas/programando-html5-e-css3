@@ -11,9 +11,9 @@ html {
 }
 
 header {
-    background-color: #ffffff;
     width: 100%;
-    height: 6rem;
+    /* height: 6rem; */
+    height: 0;
 }
 
 .nav-content {
@@ -44,6 +44,11 @@ li {
     text-decoration: none;
     list-style: none;
     color: #000;
+}
+
+.nav-itens:hover {
+    color: #30c01d;
+    transition-duration: 0.5s;
 }
 
 main {

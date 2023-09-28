@@ -25,6 +25,8 @@ html {
     height: 400vh;
 }
 
+/* Barra de navegação */
+
 header {
     width: 100%;
     padding: 0 3%;
@@ -83,6 +85,8 @@ header {
     border-radius: 6px;
 }
 
+/* Conteúdo principal */
+
 .main-title {
     font-size: 3rem;
     font-weight: 500;
@@ -120,4 +124,50 @@ header {
     padding: 0 3%;
     padding-bottom: 2rem;
     border-radius: 15px;
+}
+
+/* Conteúdo Secundario */
+
+.main-second-container {
+    background-color: #effcf1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-second-banner {
+    padding: 0 3%;
+    border-radius: 15px;
+    max-width: 1080px;
+    margin: 3rem 0;
+}
+
+.main-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cor5);
+    font-weight: 400;
+}
+
+.main-span-logo1 {
+    color: var(--cor2);
+    font-weight: 700;
+}
+
+.main-subtitle2 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--cor5);
+    font-weight: 400;
+}
+
+.main-span-logo2 {
+    color: var(--cor3);
+    font-weight: 200;
+}
+
+.main-subtext {
+    color: var(--cor5);
+    text-align: center;
+    margin-top: 1.5rem;
 }

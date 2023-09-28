@@ -36,10 +36,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
 }
 
 .nav-logo > img {
-    max-width: 100px;
+    max-width: 60px;
 }
 
 .nav-menu {
@@ -47,11 +48,8 @@ header {
     justify-content: center;
 }
 
-.nav-bar {
 
-}
-
-li {
+.nav-menu > .nav-bar > li {
     display: inline;
 }
 
@@ -59,4 +57,23 @@ li {
     list-style: none;
     text-decoration: none;
     color: var(--cor2);
+    margin: 0 1rem;
+}
+
+.nav-menu > .nav-bar > li > .nav-itens:hover {
+    color: var(--cor3);
+    transition-duration: 0.7s;
+}
+
+.buy-ticket > button {
+    background-color: var(--cor3);
+    padding: 0.5rem 2rem;
+    border: none;
+    color: var(--cor5);
+    font-weight: 500;
+}
+
+.buy-ticket > button:hover {
+    background-color: var(--cor2);
+    transition-duration: 0.7s;
 }

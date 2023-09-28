@@ -39,7 +39,7 @@ header {
     height: 5rem;
 }
 
-.nav-logo > img {
+.nav-logo > a > img {
     max-width: 60px;
 }
 
@@ -76,4 +76,5 @@ header {
 .buy-ticket > button:hover {
     background-color: var(--cor2);
     transition-duration: 0.7s;
+    cursor: pointer;
 }

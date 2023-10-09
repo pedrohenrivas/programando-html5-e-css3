@@ -210,7 +210,7 @@ header {
     margin-bottom: 2rem;
 }
 
-/* 3º Conteúdo */
+/* 4º Conteúdo */
 
 .main-four-container {
     background-color: #effcf1;
@@ -231,6 +231,12 @@ header {
     text-align: center;
     color: var(--cor5);
     font-weight: 400;
+}
+
+.main-subtext-four {
+    color: var(--cor5);
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 .gallery {

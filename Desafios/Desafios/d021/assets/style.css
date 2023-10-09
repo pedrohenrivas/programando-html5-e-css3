@@ -127,7 +127,7 @@ header {
     transition: .3s;
 }
 
-/* Conteúdo Secundario */
+/* 2º Conteúdo */
 
 .main-second-container {
     background-color: #effcf1;
@@ -208,4 +208,57 @@ header {
     color: #fff;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+/* 3º Conteúdo */
+
+.main-four-container {
+    background-color: #effcf1;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main-four-content {
+    padding: 0 3%;
+    max-width: 1080px;
+    margin: 3rem 0;
+}
+
+.main-subtitle-four {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cor5);
+    font-weight: 400;
+}
+
+.gallery {
+  --g: 6px; /* the gap */
+  
+  display: grid;
+  width: 450px; /* the size */
+  aspect-ratio: 1;
+  grid: auto-flow 1fr/repeat(3,1fr);
+  gap: var(--g);
+  margin: 2rem auto 0 auto;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale();
+  cursor: pointer;
+  transition: .5s
+}
+.gallery img:hover {
+  filter: grayscale(0);
+}
+.gallery img:nth-child(2) {
+  grid-area: 1/2/span 2/span 2;
+  clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + var(--g)/4) 100%,0 calc(50% - var(--g)/4))
+}
+.gallery img:nth-child(3) {
+  grid-area: 2/1/span 2/span 2;
+  clip-path: polygon(0 0,calc(50% - var(--g)/4) 0,100% calc(50% + var(--g)/4),100% 100%,0 100%);
 }
